@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display Generated Password -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Surakshita"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvGeneratedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Generated Password"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp" />
+
+    <!-- SeekBar for Password Length -->
+    <TextView
+        android:id="@+id/tvLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Length: 8"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="64"
+        android:progress="8" />
+
+    <!-- Checkboxes for including characters -->
+    <CheckBox
+        android:id="@+id/cbIncludeLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Include Letters" />
+
+    <CheckBox
+        android:id="@+id/cbIncludeNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Include Numbers" />
+
+    <CheckBox
+        android:id="@+id/cbIncludeSpecial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Include Special Characters" />
+
+    <!-- Generate Button -->
+    <Button
+        android:id="@+id/btnGeneratePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Generate Password" />
+
+</LinearLayout>
